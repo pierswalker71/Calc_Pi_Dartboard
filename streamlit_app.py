@@ -12,7 +12,8 @@ def main():
      # Title
     st.title('Calculate Pi by the Dartboard method')
     st.write('Piers Walker 2022. https://github.com/pierswalker71')
-    st.write('This App can be used to estimate the value of Pi through the ratio of areas of an inscribed circle within a square')
+    st.write('This App can be used to estimate the value of Pi through the ratio of areas of an inscribed circle within a square. \
+              Ref: https://en.wikipedia.org/wiki/Monte_Carlo_method')
     st.write('Imagine throwing a dart randomly at a square containing a circular dartboard. \
              The probability of the dart landing inside the circle relates to the area of the circle vs the area of the square. \
              Pi may then be estimated as 4 times the number of darts that hit the dartboard out of the total number of darts thrown.')
