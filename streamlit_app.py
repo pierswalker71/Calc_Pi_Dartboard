@@ -50,7 +50,7 @@ def main():
 
     # Calculate and display pi value
     plt.rcParams['text.usetex'] = True
-    #ax.set_title(r'\pi \approx '+str(np.round(4*sum(number_in_circle)/max_num,3)))
+    ax.set_title(r'\pi \approx '+str(np.round(4*sum(number_in_circle)/max_num,3)))
     
     #pi_text = str(np.round(4*sum(number_in_circle)/max_num,3))
     #st.latex(r'''
