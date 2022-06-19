@@ -49,7 +49,11 @@ def main():
     ax.scatter(x, y,marker='.', c=colour, s=15)
 
     # Calculate and display pi value
-    ax.set_title('Pi estimate = '+str(np.round(4*sum(number_in_circle)/max_num,3)))
+    #ax.set_title('Pi estimate = '+str(np.round(4*sum(number_in_circle)/max_num,3)))
+    
+    st.latex(r'''
+             \pi \approx \text{str(np.round(4*sum(number_in_circle)/max_num,3))}
+             ''')
 
     # Plot circle outline
     circle = plt.Circle((0.5, 0.5), 0.5, fill=False, color='0.5')
