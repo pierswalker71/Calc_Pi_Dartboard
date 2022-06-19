@@ -12,7 +12,10 @@ def main():
      # Title
     st.title('Calculate Pi by the Dartboard method')
     st.write('Piers Walker 2022. https://github.com/pierswalker71')
-    st.write('This is a simple Streamlit App example which can be used to estimate the value of Pi')
+    st.write('This App can be used to estimate the value of Pi through the ratio of areas of an inscribed circle within a square')
+    st.write('Imagine throwing a dart randomly at a square containing a circular dartboard. \
+             The probability of the dart landing inside the circle relates to the area of the circle vs the area of the square. \
+             Pi may then be estimated as 4 times the number of darts that hit the dartboard out of the total number of darts thrown.')
     
     
     st.subheader('Settings') 
@@ -36,13 +39,13 @@ def main():
             colour.append('y')   
             
     #----------------------------------------------------------------------
-    st.subheader('Resultss') 
+    st.subheader('Results') 
     # Generate scatter plot
     fig, ax = plt.subplots(figsize=(4,4))
     ax.scatter(x, y,marker='.', c=colour, s=15)
 
     # Calculate and display pi value
-    ax.set_title('pi= '+str(np.round(4*sum(number_in_circle)/max_num,3)))
+    ax.set_title('Pi estimate = '+str(np.round(4*sum(number_in_circle)/max_num,3)))
 
     # Plot circle outline
     circle = plt.Circle((0.5, 0.5), 0.5, fill=False, color='0.5')
