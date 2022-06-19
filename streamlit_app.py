@@ -25,7 +25,7 @@ def main():
     st.subheader('Settings') 
     
     # Set max number of points
-    max_num = st.number_input('Number of darts', min_value=100, max_value=100000, value=10000)
+    max_num = st.number_input('Number of darts thrown', min_value=100, max_value=100000, value=10000)
 
     # Pre-generate random coordinates
     x, y = np.random.rand(max_num), np.random.rand(max_num)
