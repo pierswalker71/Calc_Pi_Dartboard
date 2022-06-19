@@ -36,8 +36,9 @@ def main():
             colour.append('y')   
             
     #----------------------------------------------------------------------
+    st.subheader('Resultss') 
     # Generate scatter plot
-    fig, ax = plt.subplots(figsize=(5,5))
+    fig, ax = plt.subplots(figsize=(4,4))
     ax.scatter(x, y,marker='.', c=colour, s=15)
 
     # Calculate and display pi value
