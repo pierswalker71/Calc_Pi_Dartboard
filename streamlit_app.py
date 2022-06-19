@@ -53,7 +53,7 @@ def main():
     
     pi_text = str(np.round(4*sum(number_in_circle)/max_num,3))
     st.latex(r'''
-             \pi \approx \text{test}
+             \pi \approx pi_text 
              ''')
 
     # Plot circle outline
