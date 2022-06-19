@@ -51,8 +51,9 @@ def main():
     # Calculate and display pi value
     #ax.set_title('Pi estimate = '+str(np.round(4*sum(number_in_circle)/max_num,3)))
     
+    pi_text = str(np.round(4*sum(number_in_circle)/max_num,3))
     st.latex(r'''
-             \pi \approx \text{str(np.round(4*sum(number_in_circle)/max_num,3))}
+             \pi \approx \text{test}
              ''')
 
     # Plot circle outline
