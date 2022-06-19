@@ -17,7 +17,9 @@ def main():
     st.write('Imagine throwing a dart randomly at a square containing a circular dartboard. \
              The probability of the dart landing inside the circle relates to the area of the circle vs the area of the square. \
              Pi may then be estimated as 4 times the number of darts that hit the dartboard out of the total number of darts thrown.')
-    st.latex(r''' \pi''')
+    st.latex(r'''
+             \pi \approx 4 * {num_darts_in_circle \over total_num_darts}
+             ''')
     
     
     st.subheader('Settings') 
