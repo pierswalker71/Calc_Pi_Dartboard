@@ -18,7 +18,7 @@ def main():
              The probability of the dart landing inside the circle relates to the area of the circle vs the area of the square. \
              Pi may then be estimated as:')
     st.latex(r'''
-             \pi \approx 4 * {number of darts in circle \over total number of darts}
+             \pi \approx 4 * {\text{number of darts in circle} \over \ text{total number of darts}}
              ''')
     
     
